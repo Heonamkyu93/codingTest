@@ -1,27 +1,6 @@
 class Solution {
     public int[] solution(int[] arr, int[][] queries) {
-        int[] answer = new int[arr.length];
-        
-        for (int[] query : queries) {
-            int start = query[0];
-            int end = query[1];
-            
-           
-            if (end >= arr.length) {
-                end = arr.length - 1;
-            }
-            
-           
-            for (int i = start; i <= end; i++) {
-                arr[i]++;
-            }
-        }
-        
-        
-        for (int i = 0; i < arr.length; i++) {
-            answer[i] = arr[i];
-        }
-        
+        int[] answer = {};
         return answer;
     }
 }
