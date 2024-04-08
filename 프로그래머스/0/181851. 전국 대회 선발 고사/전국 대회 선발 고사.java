@@ -9,7 +9,7 @@ class Solution {
                 al.add(rank[i]);
             }
         }
-       Collections.sort(al);
+       Collections.sort(al, Collections.reverseOrder());
         int a=0;
         int b=0;
         int c=0;
@@ -23,6 +23,6 @@ class Solution {
         int answer = 10000 * a + 100 * b + c;
         
         
-        return answer;
+        return a;
     }
 }
